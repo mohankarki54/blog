@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load bootstrap3 %}
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h2>You must need to Sign up to post the comment.</h2>
+<h1>
+    <a href="{% url 'signup' %}">Sign up</a>
+  </h1>
+  <br>
+    <p>Thank you.
+      <span class = 'o'></span>
+
+    </p>
+
+  </div>
+</div>
+
+{% endblock %}

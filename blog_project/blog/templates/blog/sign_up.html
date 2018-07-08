@@ -1,0 +1,18 @@
+<title>New user</title>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <h1>Sign Up</h1>
+  <form  method="POST" class= 'signup'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class = 'btn btn-success'>Sign up</button>
+
+    <div class="card-footer text-muted text-center" id ='signup'>
+            Already have an account? <a href="{% url 'login' %}">Log in</a>
+    </div>
+  </form>
+
+{% endblock %}

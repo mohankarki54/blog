@@ -1,0 +1,91 @@
+.loader{
+  align-items: left;
+  background-color: #a4aebf;
+  display: auto;
+  font-family: Inconsolata, sans-serif;
+  width: 98%;
+  justify-content: center;
+  margin: 0;
+
+
+}
+
+
+.techfont{
+  font-family: Inconsolata, sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+  background: transparent;
+  text-decoration-color: #395759;
+  background-color: #3b98ba;
+  width: 98%;
+
+}
+
+
+.postdate{
+  text-align:left;
+}
+
+.posttitle{
+  font-family: Inconsolata, sans-serif;
+  font-size: 2.5em;
+  padding-bottom:0px;
+  padding-left: 200px;
+  text-decoration: underline;
+}
+
+.postcontent{
+  font-family: Inconsolata, sans-serif;
+  font-size: 1.5em;
+}
+
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+
+.bigbrand{
+  font-size: 2em;
+}
+
+.post-form{
+    text-align: left;
+    padding-top: 75px;
+    padding-left: 300px;
+    justify-content: center;
+
+}
+
+.newpost{
+  color: #f48342;
+  text-decoration: underline;
+  padding-left: 250px;
+}
+
+.mohan{
+  color: #f48342;
+  text-decoration: underline;
+  text-align: right;
+
+}
+
+.password{
+
+  justify-content: center;
+  padding-left: 250px;
+  padding-right: 100px;
+  padding-top: 100px;
+
+}
+
+#signup{
+  padding-bottom: 0px;
+  text-decoration: underline;
+  color: #a03bba;
+}

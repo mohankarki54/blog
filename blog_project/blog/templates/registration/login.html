@@ -1,0 +1,38 @@
+<title>Login</title>
+
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="container post-form">
+  <h1 class="text-center logo my-4">
+    Tech News and Blog
+  </h1>
+
+  <div class="jumbotron">
+
+    <h2>Please Login: </h2>
+
+    {% if form.errors %}
+        <p>Your username and password didn't match.Please try again!</p>
+    {% endif %}
+
+    <form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" class='btn btn-primary' value="Login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+  </div>
+  <div class="card-footer text-muted text-center">
+            New to Tech News and Blog? <a href="{% url 'signup' %}">Sign up</a>
+    </div>
+
+    <div class="text-center py-2">
+        <small>
+          <a href="{% url 'password_reset' %}" class="text-muted" id = 'signup'>Forgot your password?</a>
+        </small>
+      </div>
+
+
+</div>
+{% endblock %}
